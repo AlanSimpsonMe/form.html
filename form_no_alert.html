@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Attach a click event to the submit button
+            document.getElementById('submit_button').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent form from submitting
+                // Perform actions on submit
+                // alert('Form submitted!');
+                // Optionally, you can process form data here
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>User Information</h2>
+    <form>
+        <label for="tbFirstName">First Name:</label><br>
+        <input type="text" id="tbFirstName" name="firstName"><br><br>
+
+        <label for="tbLastName">Last Name:</label><br>
+        <input type="text" id="tbLastName" name="lastName"><br><br>
+
+        <label for="tbUserName">Username:</label><br>
+        <input type="text" id="tbUserName" name="username"><br><br>
+
+        <label for="tbCellPhone">Cell Phone:</label><br>
+        <input type="tel" id="tbCellPhone" name="cellPhone"><br><br>
+
+        <button type="submit" id="submit_button">Submit</button>
+    </form>
+</body>
+</html>
